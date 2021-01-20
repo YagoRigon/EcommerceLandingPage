@@ -42,3 +42,36 @@ header{
 .search .fa-search{
     color: #fff;
 }
+
+.carrocel {
+    background-color: red;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 170px;
+    justify-content:space-evenly;
+    align-items: stretch;
+}
+
+.carrocel ul {
+    padding: 100px 100px 100px 45px;
+}
+
+#produto1 {
+    background-color: salmon;
+
+}
+
+#produto2 {
+    background-color: gray;
+
+}
+
+#produto3 {
+    background-color: aqua;
+
+}
+
+#produto4 {
+    background-color: yellow;
+
+}

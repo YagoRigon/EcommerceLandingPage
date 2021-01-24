@@ -11,6 +11,7 @@ body{
     background-color:#2d71a6;
 }
 
+/* ---- ----- ----- Inicio do Header ---- ----- ----- */
 header{
     background-color: black;
     position: absolute; 
@@ -22,6 +23,12 @@ header{
     align-items: center;
     padding: 30px 100px;
     z-index: 1000;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    z-index: 700;
 }
 
 .navigation{
@@ -42,3 +49,102 @@ header{
 .search .fa-search{
     color: #fff;
 }
+/* ---- ----- ----- Fim do Header ---- ---- ----*/
+
+/* ---- ----- ----- Conteudo Titulos e Controles ----- ----- ----- */
+.container-titulo-controle {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.container-titulo-controle h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+.container-titulo-controle .indicacoes button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.container-titulo-controle .indicacoes button:hover,
+.container-titulo-controle .indicacoes button.activo {
+	background: red;
+}
+
+
+/* ---- ----- ----- Conteudo Principal e Flexas ----- ----- ----- */
+.produtos-recomendados {
+    margin-top: 250px;
+	margin-bottom: 200px;
+}
+
+.produtos-recomendados .conteudo-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.produtos-recomendados .conteudo-principal .flexa-esquerda,
+.produtos-recomendados .conteudo-principal .flexa-direita {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.produtos-recomendados .conteudo-principal .flexa-esquerda:hover,
+.produtos-recomendados .conteudo-principal .flexa-direita:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.produtos-recomendados .conteudo-principal .flexa-esquerda {
+	left: 0;
+}
+
+.produtos-recomendados .conteudo-principal .flexa-direita {
+	right: 0;
+}
+
+/* ---- ----- ----- Carrossel ----- ----- ----- */
+.produtos-recomendados .conteudo-carrossel {
+	width: 100%;
+	padding:20px 50px;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.produtos-recomendados .conteudo-carrossel .carrossel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.produtos-recomendados .conteudo-carrossel .carrossel .produto {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.produtos-recomendados .conteudo-carrossel .carrossel .produto.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.produtos-recomendados .conteudo-carrossel .carrossel .produto img {
+	width: 100%;
+	vertical-align: top;
+}
+

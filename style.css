@@ -22,7 +22,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 100px;
-    z-index: 1000;
+	z-index: 1000;
+	max-height: 170px;
 }
 
 .logo img {
@@ -32,7 +33,7 @@ header{
 }
 
 .navigation{
-    display: flex;
+	display: flex;
 }
 
 .navigation li{
@@ -59,6 +60,7 @@ header{
 }
 
 .container-titulo-controle h3 {
+	padding-left: 50px;
 	color: #fff;
 	font-size: 30px;
 }
@@ -80,8 +82,8 @@ header{
 
 /* ---- ----- ----- Conteudo Principal e Flexas ----- ----- ----- */
 .produtos-recomendados {
-    margin-top: 250px;
-	margin-bottom: 200px;
+    margin-top: 200px;
+	margin-bottom: 100px;
 }
 
 .produtos-recomendados .conteudo-principal {
@@ -121,8 +123,8 @@ header{
 
 /* ---- ----- ----- Carrossel ----- ----- ----- */
 .produtos-recomendados .conteudo-carrossel {
-	width: 100%;
-	padding:20px 50px;
+	width: 97.35%;
+	padding:10px 50px;
 	overflow: hidden;
 	scroll-behavior: smooth;
 }
@@ -136,6 +138,8 @@ header{
 	min-width: 20%;
 	transition: .3s ease all;
 	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+	background-color: rgba(39, 93, 138, 0.9);
+	padding: 10px 10px 10px;
 }
 
 .produtos-recomendados .conteudo-carrossel .carrossel .produto.hover {
@@ -148,3 +152,12 @@ header{
 	vertical-align: top;
 }
 
+.produto .texto-produto {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	color: seashell;
+}
